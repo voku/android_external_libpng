@@ -1,7 +1,7 @@
 /* png.h - header file for PNG reference library
  *
- * libpng version 1.2.46 - July 9, 2011
- * Copyright (c) 1998-2011 Glenn Randers-Pehrson
+ * libpng version 1.2.47 - February 18, 2012
+ * Copyright (c) 1998-2012 Glenn Randers-Pehrson
  * (Version 0.96 Copyright (c) 1996, 1997 Andreas Dilger)
  * (Version 0.88 Copyright (c) 1995, 1996 Guy Eric Schalnat, Group 42, Inc.)
  *
@@ -270,6 +270,11 @@
  *    1.2.46rc01-02           13    10246  12.so.0.46[.0]
  *    1.0.56                  10    10056  10.so.0.56[.0]
  *    1.2.46                  13    10246  12.so.0.46[.0]
+ *    1.2.47beta01            13    10247  12.so.0.47[.0]
+ *    1.2.47rc01              13    10247  12.so.0.47[.0]
+ *    1.0.57rc01              10    10057  10.so.0.57[.0]
+ *    1.2.47                  13    10247  12.so.0.47[.0]
+ *    1.0.57                  10    10057  10.so.0.57[.0]
  *
  *    Henceforth the source version will match the shared-library major
  *    and minor numbers; the shared-library major version number will be
@@ -1908,8 +1913,9 @@ extern PNG_EXPORT(void,png_read_row) PNGARG((png_structp png_ptr,
 /* Build image index for partial image decoding. */
 extern PNG_EXPORT(void,png_build_index) PNGARG((png_structp png_ptr));
 extern PNG_EXPORT(void,png_configure_decoder)
-   PNGARG((png_structp png_ptr, int *row_offset, int pass));
+    PNGARG((png_structp png_ptr, int *row_offset, int pass));
 #endif
+
 
 #ifndef PNG_NO_SEQUENTIAL_READ_SUPPORTED
 /* Read the whole image into memory at once. */
